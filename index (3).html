@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Proyek Pirolisis Plastik | XII-5 SMA Serviam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #1b4332;
+            --secondary-green: #2d6a4f;
+            --accent-gold: #ffc107;
+            --light-bg: #fdfdfd;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background-color: var(--light-bg);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Roboto Slab', serif;
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+
+        .article-text {
+            font-family: 'Lora', serif;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(27, 67, 50, 0.9), rgba(27, 67, 50, 0.9)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        .list-group-item.active {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .img-fluid-custom {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .img-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .formula-box {
+            background: #f8f9fa;
+            border-left: 5px solid var(--secondary-green);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            background: var(--primary-green);
+            color: white;
+            padding: 60px 0;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar-nav">
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 text-white">Pemanfaatan Sampah Plastik sebagai Sumber Energi Alternatif melalui Pirolisis</h1>
+            <p class="lead">Kajian Proses dan Efisiensi Energi</p>
+            <p class="fw-bold">Tim Peneliti XII-5 - SMA Serviam</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="sidebar">
+                    <div id="sidebar-nav" class="list-group shadow-sm">
+                        <a class="list-group-item list-group-item-action active" href="#bab1-1">Latar Belakang</a>
+                        <a class="list-group-item list-group-item-action" href="#bab2-1">Data Sampah</a>
+                        <a class="list-group-item list-group-item-action" href="#bab2-2">Cara Kerja Pirolisis</a>
+                        <a class="list-group-item list-group-item-action" href="#bab2-4">Analisis BBM</a>
+                        <a class="list-group-item list-group-item-action" href="#bab-ekonomi">Analisis Ekonomi</a>
+                        <a class="list-group-item list-group-item-action" href="#game-trivia">Game Trivia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 article-text">
+                
+                <section id="bab1-1">
+                    <h3>Latar Belakang</h3>
+                    <hr>
+                    <p>Di zaman sekarang, banyak energi yang sering kali digunakan oleh manusia. Manusia mengandalkan energi dalam kehidupan sehari-hari. Seiring berjalannya waktu, lama-kelamaan energi akan habis karena digunakan secara terus-menerus. Kasus ini perlu dibahas agar kita sebagai pengguna energi dapat mencegah kelangkaan energi.</p>
+                    <p>Kelangkaan energi dapat terjadi karena energi terus digunakan secara terus-menerus, namun tidak ada produksi energi karena tidak semua produksi energi dapat dilakukan dengan cepat ataupun instan. Contohnya yaitu energi listrik. Salah satu asal energi listrik yaitu dari bahan bakar fosil seperti batu bara dan gas, yang tidak dapat diproduksi secara singkat. Energi listrik juga dapat dihasilkan dari energi terbarukan seperti angin, air, surya, dan panas bumi. Namun, banyaknya sampah di sekitar kita tentunya bisa dimanfaatkan menjadi sesuatu yang berguna. Salah satu cara yang dapat kita manfaatkan untuk mengatasi masalah ini yaitu mengubah sampah plastik menjadi energi listrik.</p>
+                    <p>Pengolahan sampah plastik menjadi energi listrik merupakan solusi strategis yang mampu mengatasi dua masalah besar sekaligus, yaitu penumpukan limbah plastik dan ketergantungan terhadap energi fosil yang semakin menipis. Seiring meningkatnya konsumsi energi, cadangan gas dan batubara terus mengalami penurunan dan berpotensi habis di masa yang akan datang jika terus digunakan tanpa alternatif. Di sisi lain, plastik memiliki nilai kalor tinggi sehingga dapat dikonversi menjadi minyak sintetis, gas, atau bahkan listrik melalui teknologi seperti pirolisis.</p>
+                    <p>Pemanfaatan plastik sebagai sumber energi bukan hanya mengurangi volume sampah dan pencemaran lingkungan, tetapi juga menghasilkan sumber energi lewat sesuatu yang tidak mungkin dipakai kembali. Oleh karena itu, penerapan teknologi konversi plastik menjadi energi merupakan langkah penting untuk mencapai pengelolaan sampah yang lebih efektif sekaligus mempersiapkan transisi menuju sistem energi yang lebih berkelanjutan</p>
+                    <p>	Saat ini, kondisi energi global sedang mengalami tekanan yang cukup besar akibat berbagai faktor seperti konflik geopolitik dan terganggunya distribusi minyak dunia. Dampaknya mulai dirasakan oleh banyak negara, termasuk Indonesia, yang masih bergantung pada bahan bakar minyak (BBM). Muncul kekhawatiran di masyarakat mengenai kemungkinan kenaikan harga dan kelangkaan BBM, bahkan di beberapa wilayah sudah terdapat indikasi terbatasnya pasokan. Situasi ini menunjukkan bahwa ketergantungan terhadap minyak bumi, terutama yang berasal dari impor.</p>
+                    <p>Di tengah permasalahan tersebut, diperlukan alternatif energi yang berkelanjutan. Salah satu solusi yang dapat dikembangkan adalah pemanfaatan sampah plastik menjadi bahan bakar. Selain membantu mengurangi jumlah limbah plastik yang terus meningkat, inovasi ini juga berpotensi menghasilkan sumber energi yang dapat menggantikan sebagian penggunaan BBM. Dengan demikian, proyek ini tidak hanya berkontribusi dalam mengatasi permasalahan lingkungan, tetapi juga menjadi langkah strategis untuk mengurangi dampak krisis energi yang sedang terjadi saat ini.</p>
+                </section>
+
+<h3>Data Sampah</h3>
+<hr>
+<div class="img-container">
+    <img src="image_cc057a.png" class="img-fluid-custom" 
+</div>
+
+<div class="img-container">
+    <img src="https://uploads.onecompiler.io/44hk7ea9p/44hk6rnqw/Screenshot%202026-03-27%20183604.png" class="img-fluid-custom" alt="Gambar Tambahan Data Sampah">
+</div>
+
+                    <p>Diagram tersebut menunjukkan komposisi sampah berdasarkan jenisnya, di mana sisa makanan mendominasi sebesar 39,68%, diikuti oleh plastik sebesar 20,01%, lalu kayu/ranting dan kertas/karton masing-masing sekitar 11,05%. Jenis sampah lainnya seperti logam, kaca, kain, dan karet memiliki persentase yang relatif kecil. Data ini menunjukkan bahwa meskipun sampah organik merupakan bagian terbesar, sampah plastik menempati posisi kedua yang cukup signifikan dan menjadi salah satu masalah utama karena sifatnya yang sulit terurai di lingkungan.</p>
+                    <p>Plastik memiliki potensi yang sangat besar untuk diolah melalui proses pirolisis. Plastik tersusun dari rantai hidrokarbon panjang yang dapat diuraikan melalui pemanasan tanpa oksigen menjadi senyawa yang lebih sederhana seperti minyak, gas, dan residu padat. Dengan jumlah mencapai 20,01%, sampah plastik dapat menjadi sumber bahan baku yang efektif untuk menghasilkan energi alternatif. Oleh karena itu, pemanfaatan plastik melalui pirolisis tidak hanya membantu mengurangi pencemaran lingkungan, tetapi juga memberikan nilai tambah secara ekonomi dengan menghasilkan BBM sintetis.</p>
+                </section>
+
+                <section id="bab2-2">
+                     <h3>Cara Kerja Pirolisis</h3>
+    <hr>
+    <div class="img-container">
+        <img src="image_cc059b.png" class="img-fluid-custom" 
+    </div>
+
+    <div class="img-container">
+        <img src="https://uploads.onecompiler.io/44hk7ea9p/44hk6rnqw/Screenshot%202026-03-27%20183639.png" class="img-fluid-custom" alt="Gambar Tambahan Pirolisis">
+        <p class="img-caption">Gambar 2a: Diagram Tambahan Cara Kerja Pirolisis</p>
+    </div>
+                    <p>Pirolisis adalah proses menguraikan plastik dengan cara memanaskannya pada suhu tinggi tanpa adanya oksigen, yang dikenal sebagai pyrolysis. Dalam proses ini, plastik dipanaskan hingga sekitar 300–700°C sehingga mengalami penguraian (thermal decomposition) menjadi tiga produk utama, yaitu minyak cair (bio-oil), gas, dan residu padat (arang). Minyak dan gas yang dihasilkan dapat dimanfaatkan sebagai bahan bakar, sehingga pirolisis menjadi salah satu cara untuk mengubah limbah plastik menjadi energi tanpa pembakaran langsung. Tahap awal di reaktor, proses dimulai dengan pemanasan bahan baku dari sumber panas eksternal. Kalor yang diberikan akan menaikkan suhu bahan secara bertahap, sesuai dengan persamaan:</p>
+                    <div class="formula-box">Q = m · c · ΔT</div>
+                    <p>Sebagai contoh, jika 5 kg biomassa dengan kalor jenis tertentu dipanaskan dari suhu ruang 30 °C hingga 400 °C, maka kalor yang dibutuhkan bergantung pada massa dan sifat termal biomassa tersebut. Semakin besar massa dan kenaikan suhu, semakin besar energi panas yang harus disuplai. Pemanasan ini menyebabkan molekul-molekul bahan bergetar lebih cepat hingga ikatannya mulai terurai.</p>
+                    <p>Ketika suhu reaktor terus meningkat, bahan mengalami dekomposisi termal. Ikatan molekul besar terpecah menjadi molekul yang lebih kecil dalam bentuk gas, uap, dan sisa padatan (arang). Proses ini terjadi tanpa pembakaran karena oksigen sangat terbatas. Contohnya, plastik atau biomassa akan menghasilkan uap hidrokarbon dan tar saat dipanaskan pada suhu tinggi. Secara fisik, energi panas yang cukup membuat molekul kehilangan kestabilannya sehingga berubah bentuk dan fase.</p>
+                    <p>Gas dan uap hasil pirolisis kemudian mengalir keluar dari reaktor menuju kondensor melalui pipa. Aliran ini dipengaruhi oleh perbedaan tekanan antara reaktor dan bagian luar, serta oleh luas dan panjang pipa. Hubungan kecepatan aliran dengan luas penampang pipa dapat dijelaskan melalui:</p>
+                    <div class="formula-box">Q = A · v</div>
+                    <p>Sebagai contoh, jika diameter pipa diperkecil, maka kecepatan aliran gas meningkat agar debit tetap sama. Selama perjalanan ini, suhu gas mulai menurun karena panas dilepaskan ke lingkungan sekitar. Saat memasuki kondensor, uap panas bertemu dengan pipa yang dialiri air pendingin. Terjadi perpindahan kalor dari uap ke air, sehingga suhu uap turun drastis dan mengalami perubahan wujud menjadi cair. Energi yang dilepaskan selama proses ini mengikuti persamaan:</p>
+                    <div class="formula-box">Q = m · L</div>
+                    <p>di mana L adalah kalor laten pengembunan. Contohnya, uap tar yang awalnya berbentuk gas akan mengembun menjadi cairan kental setelah kehilangan energi panasnya. Pada tahap akhir, hasil kondensasi terkumpul di penampung zat cair akibat gaya gravitasi. Tar yang lebih kental biasanya terpisah dan ditampung secara terpisah dari cairan yang lebih encer. Air pendingin yang telah menyerap panas dialirkan kembali ke bak pendingin untuk menurunkan suhunya sebelum disirkulasikan ulang oleh pompa. Sementara itu, gas yang tidak mengembun keluar melalui indikator tekanan. Proses ini berakhir ketika aliran fluida dan perpindahan kalor mencapai kondisi stabil, menandakan sistem bekerja secara optimal.</p>
+                </section>
+
+                <section id="bab2-4">
+    <h3>Analisis BBM</h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="img-container">
+                <img src="https://uploads.onecompiler.io/44hk7ea9p/44hk6rnqw/Screenshot%202026-03-27%20183712.png" class="img-fluid-custom" alt="Gambar Baru Data Sampah Tahunan">
+                <p class="img-caption">Gambar 3: Tren Timbulan Sampah Tahunan</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="img-container">
+                <img src="https://uploads.onecompiler.io/44hk7ea9p/44hk6rnqw/Screenshot%202026-03-27%20183746.png" class="img-fluid-custom" alt="Gambar Tambahan BBM">
+                <p class="img-caption">Gambar 4: Detail Tambahan Statistik BBM</p>
+            </div>
+        </div>
+    </div>
+                    <p>Menurut data dari SIPSN (Sistem Informasi Pengelolaan Sampah Nasional), rata-rata timbulan sampah di Indonesia mencapai sekitar 26.767.271,36 ton per tahun, namun hanya sekitar 35% dari jumlah tersebut yang terkelola dengan baik. Sampah plastik merupakan salah satu kontributor terbesar dibandingkan dengan jenis sampah lainnya, yaitu sebesar 20,08% atau sekitar 1.881.203,83 ton per tahun. Sampah ini berasal dari berbagai sumber, seperti rumah tangga, perkantoran, pasar, fasilitas publik, kawasan komersial, dan aktivitas lainnya.</p>
+                    <p>Berdasarkan data dari Henan Mingjie Environmental Protection Equipment Co., sekitar 90 wt% sampah plastik dapat diolah menjadi bahan bakar melalui proses pirolisis. Dengan demikian, dari total sampah plastik sebesar 1.881.203,83 ton per tahun, potensi bahan bakar yang dapat dihasilkan mencapai sekitar 1.693.083,45 ton. Jika dikonversikan menggunakan massa jenis bahan bakar sebesar 750 kg/m³, maka volume bahan bakar yang dihasilkan diperkirakan sekitar 2,26 miliar liter. Hal ini menunjukkan bahwa pengolahan sampah plastik memiliki potensi yang sangat besar dalam menghasilkan energi alternatif sekaligus mengurangi jumlah limbah di lingkungan.</p>
+                    <p>Di sisi lain, berdasarkan data konsumsi minyak di Indonesia dalam kurun waktu 10 tahun terakhir, rata-rata konsumsi berada di kisaran 1.500 barel per hari (kb/d). Jika dikonversi, dengan 1 barel setara dengan 158,987 liter, maka konsumsi tersebut setara dengan sekitar 238 juta liter per hari. Jika dibandingkan dengan potensi bahan bakar yang dihasilkan dari pengolahan sampah plastik, jumlah tersebut menunjukkan bahwa teknologi ini memiliki kontribusi yang signifikan dalam membantu memenuhi kebutuhan energi. Oleh karena itu, pemanfaatan sampah plastik sebagai bahan bakar alternatif berpotensi mengurangi ketergantungan Indonesia terhadap impor minyak dari negara lain seperti Malaysia, Singapura, maupun Arab Saudi.</p>
+                </section>
+
+                <section id="bab-ekonomi">
+                    <section id="bab-ekonomi">
+                    <h3>BAB 2.5 Analisis Ekonomi & Biaya Perolehan Alat</h3>
+                    <hr>
+                    <div class="table-responsive shadow-sm rounded-3 mb-4">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-success">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Komponen Alat</th>
+                                    <th>Spesifikasi</th>
+                                    <th class="text-end">Harga (IDR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Reaktor Stainless Steel</td><td>Custom 5L (Plat SS 304)</td><td class="text-end font-monospace">1.500.000</td></tr>
+                                <tr><td>2</td><td>Kondensor & Pipa</td><td>Pipa Tembaga AC ~2m</td><td class="text-end font-monospace">450.000</td></tr>
+                                <tr><td>3</td><td>Kompor Listrik</td><td>Maspion S-300 (600W)</td><td class="text-end font-monospace">180.000</td></tr>
+                                <tr><td>4</td><td>Arduino Uno R3</td><td>Original/Clone High Quality</td><td class="text-end font-monospace">150.000</td></tr>
+                                <tr><td>5</td><td>Thermocouple Type K</td><td>MAX6675 Module</td><td class="text-end font-monospace">65.000</td></tr>
+                                <tr><td>6</td><td>Pressure Transducer</td><td>Sensor Tekanan Gas</td><td class="text-end font-monospace">250.000</td></tr>
+                                <tr><td>7</td><td>Sensor MQ-2/5</td><td>Kebocoran LPG/Metana</td><td class="text-end font-monospace">45.000</td></tr>
+                                <tr><td>8</td><td>Pompa Air</td><td>Submersible Pump</td><td class="text-end font-monospace">85.000</td></tr>
+                                <tr><td>9</td><td>Konstruksi & Frame</td><td>Papan Besi Siku/Baut</td><td class="text-end font-monospace">400.000</td></tr>
+                                <tr><td>10</td><td>Komponen Elektronik</td><td>Relay/Kabel/LCD/Box</td><td class="text-end font-monospace">300.000</td></tr>
+                                <tr><td>11</td><td>Material Pendukung</td><td>Sealant RTV/Selang</td><td class="text-end font-monospace">120.000</td></tr>
+                            </tbody>
+                            <tfoot class="table-light">
+                                <tr class="fw-bold">
+                                    <td colspan="3" class="text-center">Subtotal Material</td>
+                                    <td class="text-end">Rp 3.545.000</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <h5>Biaya Tambahan (Capital Expenditure)</h5>
+                    <p>Jasa Las Argon (Stainless Steel): Untuk menyambung tabung reaktor agar benar-benar kedap udara (vacuum tight). Estimasi: Rp 500.000. Biaya Pengiriman/Logistik: Pembelian material berat seperti plat besi/papan. Estimasi: Rp 100.000. <strong>Total Harga Perolehan Alat: ± Rp 4.145.000.</strong></p>
+
+                    <h5 class="mt-4">Kapasitas Produksi & Keuntungan Maksimum</h5>
+                    <p>Kapasitas Reaktor: 5 Liter (Setara ± 2 kg sampah plastik cacah per batch). Durasi Proses: ± 3 jam per batch (pemanasan hingga pendinginan). Rendemen (Yield): Rata-rata plastik PP/PE menghasilkan 70% minyak. 2 kg plastik kurang lebih menghasilkan 1,4 Liter minyak (campuran setara solar/bensin). Asumsi Operasional: 1 batch per hari (agar mesin awet). Sehingga dalam 5 tahun, kurang lebih akan menghasilkan 2556.4 liter bahan bakar. Harga bahan bakar subsidi per liter adalah Rp 10.000 Maka keuntungan kotornya adalah Rp 25.564.000,00.</p>
+
+                    <h5 class="mt-4">Biaya Operasional (OPEX)</h5>
+                    <p>Biaya utama adalah listrik untuk kompor 600 Watt dan pompa air. Konsumsi Listrik: 0,6 kW x 3 jam = 1,8 kWh per batch. Biaya Listrik (Asumsi Rp 1.500/kWh): Rp 2.700 per hari. Total Listrik 5 Tahun: Rp 2.700 x 20 hari x 12 bulan x 5 tahun = Rp 4.050.000. Perawatan (Maintenance): Ganti sealant, pembersihan pipa, sensor cadangan = Rp 1.000.000 (selama 5 tahun) = Rp 5.000.000.</p>
+                </section>
+
+                <section id="game-trivia">
+                    <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                        <div class="card-header bg-success text-white text-center py-4">
+                            <h2 class="mb-0 text-white">🧪 Pirolisis Trivia Game</h2>
+                        </div>
+                        <div class="card-body p-5" id="game-container">
+                            <div id="start-screen" class="text-center">
+                                <h4>Uji Pemahaman Materi Proyek</h4>
+                                <button class="btn btn-success btn-lg px-5 mt-3" onclick="startGame()">Mulai Game</button>
+                            </div>
+                            <div id="quiz-screen" class="d-none">
+                                <h4 id="question-text" class="mb-4 text-center">...</h4>
+                                <div id="answer-buttons" class="d-grid gap-3"></div>
+                            </div>
+                            <div id="result-screen" class="d-none text-center">
+                                <h2 id="result-title">Selesai!</h2>
+                                <p id="score-text" class="display-4 fw-bold text-success">0/0</p>
+                                <button class="btn btn-outline-success mt-3" onclick="restartGame()">Ulangi</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2 fw-bold">Tim Peneliti XII-5 SMA Serviam</p>
+            <p class="small">Clarence Sean, Lycelsya Evangeline, Joshua Gerant, Nicholas Derick, Ryan Wibowo</p>
+            <hr class="bg-light opacity-25">
+            <p class="small mb-0">"Menjadi Pemimpin yang Peduli, Kreatif, dan Berwawasan Global"</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const questions = [
+            { q: "Berapa persentase sampah plastik nasional?", a: [{text:"39,68%",c:false},{text:"20,01%",c:true},{text:"11,05%",c:false}] },
+            { q: "Rumus untuk menghitung energi panas reaktor?", a: [{text:"Q = A·v",c:false},{text:"Q = m·c·ΔT",c:true},{text:"Q = m·L",c:false}] },
+            { q: "Berapa estimasi total harga perolehan alat?", a: [{text:"Rp 3.545.000",c:false},{text:"Rp 4.145.000",c:true},{text:"Rp 2.260.000",c:false}] },
+            { q: "Berapa rendemen hasil minyak dari plastik PP/PE?", a: [{text:"30%",c:false},{text:"90%",c:false},{text:"70%",c:true}] }
+        ];
+
+        let idx = 0, score = 0;
+        function startGame() {
+            document.getElementById('start-screen').classList.add('d-none');
+            document.getElementById('quiz-screen').classList.remove('d-none');
+            showQ();
+        }
+        function showQ() {
+            const q = questions[idx];
+            document.getElementById('question-text').innerText = q.q;
+            const btnBox = document.getElementById('answer-buttons');
+            btnBox.innerHTML = '';
+            q.a.forEach(ans => {
+                const b = document.createElement('button');
+                b.innerText = ans.text;
+                b.className = 'btn btn-outline-dark py-3';
+                b.onclick = () => { if(ans.c) score++; idx++; if(idx<questions.length) showQ(); else end(); };
+                btnBox.appendChild(b);
+            });
+        }
+        function end() {
+            document.getElementById('quiz-screen').classList.add('d-none');
+            document.getElementById('result-screen').classList.remove('d-none');
+            document.getElementById('score-text').innerText = score + " / " + questions.length;
+        }
+        function restartGame() { idx=0; score=0; document.getElementById('result-screen').classList.add('d-none'); startGame(); }
+    </script>
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2 fw-bold">Tim Peneliti XII-5 SMA Serviam</p>
+            <p class="small">Clarence Sean, Lycelsya Evangeline, Joshua Gerant, Nicholas Derick, Ryan Wibowo</p>
+            <hr class="bg-light opacity-25">
+            <p class="small mb-0">"Menjadi Pemimpin yang Peduli, Kreatif, dan Berwawasan Global"</p>
+        </div>
+    </footer>
+
+                </section>
+
+                <section id="game-trivia">
+                    </section>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2 fw-bold">Tim Peneliti XII-5 SMA Serviam</p>
+            <p class="small">Clarence Sean, Lycelsya Evangeline, Joshua Gerant, Nicholas Derick, Ryan Wibowo</p>
+            <p class="small mb-0">"Menjadi Pemimpin yang Peduli, Kreatif, dan Berwawasan Global"</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
